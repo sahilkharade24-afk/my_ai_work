@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My RAG AI Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Conversational RAG</h1>
+
+        <div class="card">
+            <h2>Upload PDF</h2>
+            <p>Upload a PDF to give the AI context for your conversation.</p>
+            <input type="file" id="pdf_file" accept="application/pdf">
+            <button id="upload_btn">Upload</button>
+            <div id="upload_status" class="status"></div>
+        </div>
+
+        <div class="chat-container">
+            <div id="chat-window">
+                <!-- Messages will be dynamically added here -->
+                <div class="message assistant">
+                    <p>Hello! Ask me anything, or upload a PDF to ask questions about a specific document.</p>
+                </div>
+            </div>
+            <form id="chat-form">
+                <div class="input-container">
+                    <input type="text" id="message-input" placeholder="Type your message..." autocomplete="off">
+                    <button type="submit">Send</button>
+                </div>
+                <div class="options-container">
+                    <label>
+                        <input type="checkbox" id="rag-toggle">
+                        Use knowledge from PDF
+                    </label>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
