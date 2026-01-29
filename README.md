@@ -17,4 +17,11 @@ received, the system retrieves the most similar text chunks using vector similar
 directly to the language model for answer generation. This model helped establish the core RAG
 pipeline and provided a benchmark for evaluating more advanced approaches.
 
+an interface of our project is 
+<img width="1890" height="939" alt="Screenshot 2026-01-27 160340" src="https://github.com/user-attachments/assets/644a005a-65dd-484a-9bad-99a8a2c2e9b3" />
+this is a very simple process to handle the project.
+option 1: you can ask questions according to your choice and it give you answers too. 
+option 2: you upload the book whichever you want , and ask the questions about document , in result it gives you answers related to document.
+
+
 
